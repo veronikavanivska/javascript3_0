@@ -2,7 +2,7 @@
     const fetchStationsButton = document.getElementById('fetchStations');
     const loadingIndicator = document.getElementById('loading');
     const stationTable = document.getElementById('stationTable');
-    const apiToken = "jSCQGKDKruKlsDPZujorsPiVxRYwEXmI"; // Replace with your actual NOAA API token
+    const apiToken = "jSCQGKDKruKlsDPZujorsPiVxRYwEXmI";
 
     // Clear previous data
     const clearTable = () => {
@@ -26,7 +26,7 @@
                 return response.json();
             })
             .then(data => {
-                // Display each station in the table
+
                 data.results.forEach(station => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
