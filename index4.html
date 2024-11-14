@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOAA Climate Data Fetcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>NOAA Climate Data Fetcher</h1>
+
+
+<label for="endpointSelect">Choose Endpoint:</label>
+<select id="endpointSelect">
+  <option value="datacategories">Data Categories</option>
+  <option value="datasets">Datasets</option>
+  <option value="locations">Locations</option>
+  <option value="stations">Stations</option>
+</select>
+
+<br>
+
+<label for="limitInput">Limit:</label>
+<input type="number" id="limitInput" placeholder="Limit (default 25)" min="1" value="25">
+
+<br>
+
+<button id="fetchData">Fetch Data</button>
+
+<p id="loading" >Loading...</p>
+
+<table id="dataTable" >
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+
+  </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="task4.js"></script>
+</body>
+</html>
